@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #CONTAINER
+\*------------------------------------*/
+
+/**
+ * Container for max-widthed interface
+ */
+
+/*
+  <div class="container">
+*/
+
+$b: '.container';
+
+#{$b} {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem(size(space));
+  padding-right: rem(size(space));
+  max-width: rem(size(container));
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{% if lang %}{{ lang }}{% else %}{{ site.lang }}{% endif %}">
+  <head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="{{ site.url }}{{ uri }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>{{ title }}{% if uri != '/' %} - {{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ description }}" />
+    {% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}">{% endif %}
+
+    {% if site.googleFont %}<link href="https://fonts.googleapis.com/css?family={{ site.googleFont }}" rel="stylesheet">{% endif %}
+
+    <link rel="stylesheet" href="{{ site.path }}/css/style.css?v={{ site.time }}">
+    {% include "./partials/opengraph.njk" %}
+    {% include "./partials/favicon.njk" %}
+
+    {% block head %}{% endblock %}
+  </head>
+  <body class="text-default">
+    {% import './macros/icon.njk' as icon %}
+    {% include "./partials/icons.njk" %}
+    {% block body %}{% endblock %}
+    {% include "./partials/analytics.njk" %}
+  </body>
+</html>

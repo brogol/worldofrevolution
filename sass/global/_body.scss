@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+
+/**
+ * Document's body
+ * 
+  <body>
+ */
+
+body {
+  // @include font-smoothing(on);
+  background-color: color(dark);
+  color: color(white);
+  font-family: font(text);
+  font-size: size(font);
+}

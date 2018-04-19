@@ -1,0 +1,10 @@
+{% extends './layout.njk' %}
+
+{% if not status %}{% set status = site.status %}{% endif %}
+
+{% block body %}
+  <main class="home">
+    <h1 class="text-mega">{{ title }}</h1>
+    <p>Bientôt</p>
+  </main>
+{% endblock %}

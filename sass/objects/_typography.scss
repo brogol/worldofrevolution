@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    #TYPOGRAHY
+\*------------------------------------*/
+
+/**
+ * MARGIN
+ * Styling group margin
+ */
+
+p, ul, h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 rem(size(space));
+}
+
+p:last-child, ul:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * TEXT
+ * Dedicated helper class
+ */
+
+.text {
+  &-default {
+    font-size: rem(16);
+    font-weight: normal;
+    line-height: 2;
+
+    strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-size: rem(18);
+      font-style: normal;
+    }
+  }
+
+  &-mega {
+    font-family: font(alt);
+    font-size: rem(40);
+    font-weight: normal;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: size(screen, phablet)) {
+    // &-default {
+    //   font-size: rem(13);
+    // }
+
+    &-title {
+      font-size: rem(32);
+    }
+  }
+
+  @media (max-width: size(screen, phone)) {
+    &-default {
+      font-size: rem(14);
+    }
+
+    &-title {
+      font-size: rem(24);
+    }
+  }
+}

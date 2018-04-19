@@ -1,0 +1,125 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+/**
+ * BEM
+ * Naming convention
+ */
+
+$block: '.b-class-name' !default; // Block name
+// __ Element separator is double underscore
+// -- Modifier separator is double dash
+
+/**
+ * DIR
+ * Directory paths for assets
+ */
+
+$dir: (
+  // fonts:  '../fonts/',
+  img:    '../assets/img/',
+) !default;
+
+/**
+ * COLORS
+ * Let's get visual
+ */
+
+$color-identity: (
+  // theme variables
+  'yellow': #FFC758,
+  red: #EE6352,
+  blue: #3C91E6,
+  green: #9FD356,
+  pink: #F9B9F2,
+  // here begins contants
+  dark:     #111111,
+  neutral:  #9E9E9E,
+  'white':  #ffffff,
+) !default;
+
+$color-brand: (
+  facebook:    #3b5998,
+  twitter:     #55acee,
+  // googleplus:  #dc4e41,
+  instagram:   #e1306c,
+  // linkedin:    #0077b5,
+  // pinterest:   #bd081c,
+  // tumblr:      #35465c,
+  // whatsapp:    #43d854,
+  // wordpress:   #21759b,
+  // youtube:     #e52d27,
+) !default;
+
+$colors: map-merge($color-brand, $color-identity);
+
+/**
+ * FONTS
+ * Font families
+ */
+
+$fonts: (
+  text:   ('PT Sans', sans-serif),
+  alt:    ('Krona One', sans-serif),
+) !default;
+
+
+/**
+ * SIZES
+ * Measure length, width, height
+ */
+
+$sizes: (
+  font:           13px,
+  space:          20px,
+  radius:         25px,
+  border:         1px,
+  nav-bar:        60px,
+  nav-border:     1px,
+  shutter:        300px,
+  menu:           240px,
+  infinite:       9999px,
+  screen: (
+    phone:        414px,
+    phablet:      640px,
+    tablet:       854px,
+    laptop:       1152px,
+    desktop:      1440px,
+  ),
+  container:      1200px,
+) !default;
+
+/**
+ * ZINDEX
+ * Organize z-index positionning
+ */
+
+$zindex: (
+  below:          -1,
+  above:          1,
+  selector:       100,
+  subnav:         200,
+  header:         300,
+    brand:        301,
+    nav-item:     302,
+    nav-shutter:  303,
+  shutter:        900,
+) !default;
+
+/**
+ * TIMES
+ * Top chrono
+ */
+
+$times: (
+  fast: 0.15s,
+  veryfast: 0.05s,
+  loading: 1.5s,
+) !default;
+
+/**
+ * SPECIAL
+ * Unique variables
+ */
+$box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

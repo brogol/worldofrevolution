@@ -1,0 +1,30 @@
+---
+# URL
+# Site url without trailing slash
+url: https://worldofrevolution.com
+
+# TITLE
+# Site title
+title: World of Revolution
+
+# FONTS
+# Imperatively from https://fonts.google.com/
+googleFont: Krona+One|PT+Sans:400,700
+
+
+# NETWORK
+# Social network profiles
+# These values are individually overwrite by page network if set
+network:
+  twitter: yoannbrogol
+  facebook: worldofrevolution
+  instagram: worldofrevolution
+
+# EDITIONS
+# Editions list with relative uri and name
+# This value is overwrite by page status if set
+# editions:
+#   title: Les éditions
+#   list:
+#     - uri: '.'
+#       name: "Première édition"
